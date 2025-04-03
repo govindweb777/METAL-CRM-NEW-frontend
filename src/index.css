@@ -39,3 +39,52 @@
       @apply bg-white rounded-lg shadow-md p-4;
     }
   } */
+
+
+
+  /* Base styles for responsive layout */
+@media (max-width: 1023px) {
+  /* When on mobile/tablet, add padding to the main content */
+  .main-content {
+    padding-left: 0 !important;
+    width: 100% !important;
+  }
+  
+  /* Make navbar full width */
+  .navbar-container {
+    width: 100% !important;
+  }
+}
+
+/* For very small screens */
+@media (max-width: 639px) {
+  /* Reduce paddings */
+  .main-content {
+    padding: 0.5rem !important;
+  }
+  
+  /* Make text smaller */
+  .responsive-text {
+    font-size: 0.875rem !important;
+  }
+  
+  /* Adjust icon sizes */
+  .responsive-icon {
+    width: 1.25rem !important;
+    height: 1.25rem !important;
+  }
+}
+
+/* For tablets */
+@media (min-width: 640px) and (max-width: 1023px) {
+  .main-content {
+    padding: 1rem !important;
+  }
+}
+
+/* For desktop */
+@media (min-width: 1024px) {
+  .sidebar-overlay {
+    display: none !important;
+  }
+}

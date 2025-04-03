@@ -458,7 +458,7 @@ const CreateNewOrder = ({ onClose, addOrder }) => {
                             <input
                                 type="text"
                                 name="dimensions"
-                                placeholder="e.g., 1920x1080px"
+                                placeholder="length x breadth x height"
                                 value={order.dimensions}
                                 onChange={handleChange}
                                 className="w-full p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
