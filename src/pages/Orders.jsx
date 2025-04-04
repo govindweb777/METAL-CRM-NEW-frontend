@@ -470,7 +470,7 @@ const Orders = () => {
                 key={order._id}
                 className="hover:bg-gray-50 transition-colors"
               >
-                <td className="px-4 py-3 text-sm whitespace-nowrap overflow-hidden text-ellipsis max-w-xs">{order._id}</td>
+                <td className="px-4 py-3 text-sm whitespace-nowrap overflow-hidden text-ellipsis max-w-xs">{order.orderId}</td>
                 <td className="px-4 py-3 text-sm">{order.customer?.name || "Unknown"}</td>
                 <td className="px-4 py-3">
                   <span
@@ -549,7 +549,7 @@ const Orders = () => {
             <div className="flex justify-between items-start mb-2">
               <div className="truncate max-w-xs">
                 <span className="text-xs text-gray-500">ID:</span>
-                <span className="font-medium ml-1">{order._id}</span>
+                <span className="font-medium ml-1">{order.orderId}</span>
               </div>
               <span className={`px-2 text-xs leading-5 font-semibold rounded-full ${getStatusColor(order.status)}`}>
                 {order.status}
